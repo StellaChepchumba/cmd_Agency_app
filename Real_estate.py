@@ -36,4 +36,4 @@ with open('real-estate-sample.csv', 'r') as file:
         right = EstateFile(data[middle:])
 
         return merge(left,right)
-    print(EstateFile(data))
+        return(EstateFile(data))
