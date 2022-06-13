@@ -18,25 +18,25 @@ class MergeSort(CSVSort):
             rigthSort = MergeSort(right)
             rigthSort.sortData()            
 
-            o = j=z=0
-            while o < len(left) and j < len(right):
-                if left[o][1] < right[j][1]:
-                    self.data[z] = left[o]
-                    o +=1
+            b = x=z=0
+            while b < len(left) and x < len(right):
+                if left[b][1] < right[x][1]:
+                    self.data[z] = left[b]
+                    b +=1
                 
                 else:
-                    self.data[z]=right[j]
-                    j+=1
+                    self.data[z]=right[x]
+                    x+=1
                 z+=1
             
-            while o < len(left):
-                self.data[z] = left[o]
-                o+=1
+            while b < len(left):
+                self.data[z] = left[b]
+                b+=1
                 z+=1
             
-            while j < len(right):
+            while x < len(right):
                 self.data[z] = right[j]
-                j+=1
+                x+=1
                 z+=1
         
         print(self.data)
